@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/web/entities/creatures/Humanoids/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/web/entities/creatures/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/web/entities/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/web/images/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/web/levels/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/web/physics/packages" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Dart SDK" level="application" />
+    <orderEntry type="library" name="Dart SDK (2)" level="application" />
+  </component>
+</module>

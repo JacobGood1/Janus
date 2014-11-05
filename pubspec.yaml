@@ -1,0 +1,6 @@
+name: stageXLGame
+description: A sample web application
+dependencies:
+  browser: any
+  stagexl: any
+  vector_math: any

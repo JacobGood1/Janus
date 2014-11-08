@@ -2,7 +2,7 @@ part of component;
 
 
 
-abstract class PlayerMovement implements ComponentData{
+abstract class PlayerMovement implements PlayerComponentData{
 
   _updatePlayerMovement(){
     if(isKeyBeingPressed('d')){
@@ -39,13 +39,13 @@ abstract class PlayerMovement implements ComponentData{
   }
 }
 
-abstract class AccelerationAndFriction implements ComponentData{
+abstract class AccelerationAndFriction implements PlayerComponentData{
   double acceleration = 0.2,
          accelerationCap = 100.0,
          friction = 0.0,
          frictionSpeed = 0.96,
-         accelerationSpeed = 1.5;
-  Vector gravity = new Vector(0.0,1.0);
+         accelerationSpeed = 0.2;
+  Vector gravity = new Vector(0.0,0.0);
 
 
   _updateAccelerationAndFriction(){

@@ -2,7 +2,7 @@ part of entity;
 
 
 
-class Goblin extends Entity with InputProcessor, PlayerMovement, WrapAtStageBounds, AceFlames{
+class Goblin extends Entity with InputProcessor, AccelerationAndFriction, WrapAtStageBounds, AceFlames{
 
   //TODO investigate constructor timing
   //TODO possible make a component generator
@@ -13,6 +13,11 @@ class Goblin extends Entity with InputProcessor, PlayerMovement, WrapAtStageBoun
     scaleY = 1/8;
     speed = new Vector(1.0,0.0);
     addChild(appearance);
+  }
+
+  _updateGoblin(){
+
+    velocity.drawVector(position);
   }
 }
 

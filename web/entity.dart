@@ -2,7 +2,7 @@ library entity;
 
 import 'package:stagexl/stagexl.dart' show Bitmap, Sprite, ResourceManager, Stage, Shape, Color;
 import 'dart:mirrors';
-import 'physics/physics.dart';
+import 'components/component.dart';
 import 'dart:html';
 import 'dart:math';
 
@@ -116,7 +116,7 @@ abstract class Entity extends Sprite{
 
   set velocity(vector) => previousPosition = position - vector;
 
-  setPosition(vector){
+  void setPosition(Vector vector){
     previousPosition = vector - velocity;
     position = vector.copy();
   }
